@@ -19,7 +19,7 @@ body {
     height: 97%;
     margin: 0 auto;
     max-width: 1500px;
-    background-color: red;
+    background-color: rgb(192, 192, 192);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 1fr 1fr;
@@ -34,7 +34,7 @@ body {
     overflow: hidden;
 }
 
-.section:not(.s1):not(.s2):not(.s3){
+.section:not(.s1):not(.s2):not(.s3):not(.s4){
     display: none;
 }
 
@@ -109,6 +109,24 @@ body {
 .s4 {
     grid-column: 4/ span 1;
     grid-row: 1/ span 2;
+    background-color: hsl(254, 88%, 90%);
+    color: black;
+    padding: 10px 40px;
+}
+
+.s4 h1{
+    font-size: 28px;
+    width: 200px;
+    line-height: .9;
+}
+
+.s4 img{
+    width: 300px;
+    margin: 15px 0;
+}
+
+.s4 p{
+    width: 180px;
 }
 
 .s5 {
