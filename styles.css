@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: "League Spartan", sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 body {
@@ -13,13 +15,14 @@ body {
 
 .container {
     width: 95%;
-    height: 100%;
+    height: 97%;
     margin: 0 auto;
     max-width: 1500px;
     background-color: red;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 1fr 1fr;
+    padding: 20px;
 }
 
 .section{
@@ -27,9 +30,41 @@ body {
     height: 100%;
 }
 
+.section:not(.s1){
+    display: none;
+}
+
 .s1 {
     grid-column: 2/ span 2;
     grid-row: 1/ span 1;
+    width: 100%;
+    background-color: hsl(256, 67%, 59%);
+    padding: 30px 5px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.s1 h1 {
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 0.9;
+}
+
+.s1 h1 .x10{
+    background-color: transparent;
+    color: hsl(39, 100%, 71%)
+}
+
+.s1 h1 .faster{
+    background-color: transparent;
+    color: white;
+    font-style: italic;
+}
+
+.s1 img{
+    margin-top: 15px;
+    width: 160px;
 }
 
 .s2 {
@@ -67,5 +102,12 @@ body {
     grid-row: 1.5/ span 1.5;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    height: 3%;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
